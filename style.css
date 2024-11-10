@@ -3,7 +3,7 @@
 body {
     font-family: "Open Sans", sans-serif;
     background-color: #fafafa;
-    margin-top: 70px;
+    margin-top: 80px;
 }
 
 header {
@@ -12,7 +12,7 @@ header {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    
     background-color: #000;
     padding: 10px 0;
     z-index: 1000;
@@ -70,17 +70,17 @@ button {
     touch-action: manipulation;
 }
    
-   button:disabled {
+button:disabled {
     pointer-events: none;
 }
    
-   button:hover {
+button:hover {
     background-color: #0eb9d7;
     box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
     transform: translateY(-2px);
 }
    
-   button:active {
+button:active {
     box-shadow: none;
     transform: translateY(0);
 }
@@ -113,7 +113,6 @@ button {
     color: #1e1e1e;
     text-decoration: none;
 }
-
 
 .content {
     margin-left: 270px;
@@ -152,3 +151,12 @@ button {
     max-width: 800px;
     margin: 0 auto;
 }
+
+/* Register */
+h1{
+    text-align: center;
+    color: #1e1e1e;
+    font-weight: 700;
+}
+
+
