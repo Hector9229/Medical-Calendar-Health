@@ -12,12 +12,12 @@
 <header>
     <div class="inicio">
       <button>
-        <a href="home.html"><img src="logoR.webp" alt="logo">Medical Calendar Health</a>
+        <a href="home.php"><img src="logoR.webp" alt="logo">Medical Calendar Health</a>
       </button>
     </div>
     <div class="final">
       <button><a href="#">Login</a></button>
-      <button><a href="register.html">Register</a></button>
+      <button><a href="register.php">Register</a></button>
     </div>
 </header>
 <body>
