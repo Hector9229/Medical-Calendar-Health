@@ -65,6 +65,5 @@
             <p>Organiza y gestiona tus citas médicas de manera eficiente y sin complicaciones. Nuestra plataforma está diseñada para facilitar la coordinación entre pacientes, médicos y personal de apoyo, brindando una solución integral para la administración de citas y el seguimiento de la información de cada paciente.</p>
         </div>
     </div>
-
 </body>
 </html>
