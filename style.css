@@ -22,10 +22,10 @@ header .inicio{
 }
 
 header .inicio button{
-    padding: 0em 0em;
+    padding: 0 15px 0 0;
 }
 
-header .inicio button a{
+header .inicio a button{
     font-size: 30px;
 }
 
@@ -34,7 +34,7 @@ header img{
     height: 55px;
 }
 
-header button a{
+header a button{
     color: #0ebad7;
     text-decoration: none;
 }
@@ -43,8 +43,8 @@ header button{
     margin-right: 15px;
 }
 
-header button:hover a{
-    color: #000000;
+header a button:hover{
+    color: #000;
     text-decoration: none;
 }
 
@@ -100,8 +100,8 @@ button:active {
 }
 
 .sidebar ul button:hover{
-    margin-top: 1em;
-    margin-bottom: 1em;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 .sidebar ul button li {
@@ -158,4 +158,6 @@ h1{
     font-weight: 700;
 }
 
-
+form a{
+    text-align: center;
+}

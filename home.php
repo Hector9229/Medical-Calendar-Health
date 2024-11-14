@@ -11,22 +11,20 @@
 </head>
 <header>
     <div class="inicio">
-      <button>
-        <a href="home.php"><img src="logoR.webp" alt="logo">Medical Calendar Health</a>
-      </button>
+    <a href="home.php"><button><img src="logoR.webp" alt="logo">Medical Calendar Health</button></a>
     </div>
     <div class="final">
-      <button><a href="#">Login</a></button>
-      <button><a href="register.php">Register</a></button>
+    <a href="#"><button>Login</button></a>
+    <a href="register.php"><button>Register</button></a>
     </div>
 </header>
 <body>
     <div class="sidebar">
         <ul>
-            <button><li><i><a href="servicios.html"><i class="fi fi-rr-book-alt"></i> Servicios</a></i></li></button>
-            <button><li><i><a href="medicos.html"><i class="fi fi-rr-users-alt"></i> Medicos</a></i></li></button>
-            <button><li><i><a href="cirugias.html"><i class="fi fi-rr-hand-holding-heart"></i> Cirugías</a></i></li></button>
-            <button><li><i><a href="citas.html"><i class="fi fi-rr-calendar-lines"></i> Citas</a></i></li></button>
+            <a href="servicios.php"><button><li><i><i class="fi fi-rr-book-alt"></i> Servicios</i></li></button></a>
+            <a href="medicos.php"><button><li><i><i class="fi fi-rr-users-alt"></i> Medicos</i></li></button></a>
+            <a href="cirugias.php"><button><li><i><i class="fi fi-rr-hand-holding-heart"></i> Cirugías</i></li></button></a>
+            <a href="citas.php"><button><li><i><i class="fi fi-rr-calendar-lines"></i> Citas</i></li></button></a>
         </ul>
     </div>
 
