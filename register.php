@@ -36,20 +36,18 @@
                         <input type="text" class="form-control" id="" placeholder="" name="email" required>
                         <label for="email">Email</label>
                     </div>
-                    <div class="form-floating mt-3 mb-3">
-                        <input type="text" class="form-control" id="" placeholder="" name="password" required>
-                        <label for="password">Contraseña</label>
-                    </div>
+                    
                     <div class="form-floating mt-3 mb-3">
                         <input type="text" class="form-control" id="" placeholder="" name="celular" required>
                         <label for="celular">Celular</label>
                     </div>
-                </div>
-                <div class="col">
                     <div class="form-floating mt-3 mb-3">
                         <input type="text" class="form-control" id="" placeholder="" name="direccion" required>
                         <label for="direccion">Domicilio</label>
                     </div>
+                </div>
+                <div class="col">
+                    
                     <div class="form-floating mt-3 mb-3">
                         <input type="text" class="form-control" id="" placeholder="" name="fechaNacimiento" required>
                         <label for="fechaNacimiento">Fecha de nacimiento</label>
@@ -80,12 +78,17 @@
                         <input type="text" class="form-control" id="" placeholder="" name="no_ContacEmergencia" required>
                         <label for="no_ContacEmergencia">Numero Contacto de Emergencia</label>
                     </div>
-                </div>
-                <div class="col">
                     <div class="form-floating mt-3 mb-3">
                         <input type="text" class="form-control" id="" placeholder="" name="alergias">
                         <label for="alergias">Alergias</label>
                     </div>
+                    <div class="form-floating mt-3 mb-3">
+                        <input type="text" class="form-control" id="" placeholder="" name="password" required>
+                        <label for="password">Contraseña</label>
+                    </div>
+                </div>
+                <div class="col">
+                    
                     <div class="form-floating mt-3 mb-3">
                         <input type="text" class="form-control" id="" placeholder="" name="Medicamentos_act">
                         <label for="Medicamentos_act">Medicamentos Actuales</label>
@@ -95,6 +98,10 @@
                         <label for="enfermedades">Enfermedades</label>
                     </div>
                     <div class="form-floating mt-3 mb-3">
+                        <input type="text" class="form-control" id="" placeholder="" name="cirugias_Acci">
+                        <label for="cirugias_Acci">Cirugias que necesita</label>
+                    </div>
+                    <div class="form-floating mt-3 mb-3">
                         <input type="text" class="form-control" id="" placeholder="" name="estatura" required>
                         <label for="estatura">Estatura</label>
                     </div>
@@ -102,7 +109,6 @@
                         <input type="text" class="form-control" id="" placeholder="" name="peso" required>
                         <label for="peso">Peso</label>
                     </div>
-                    <input type="hidden" name="cirugias_Acci" value="null">
                 </div>
                 <button type="submit">Submit</button>
                 <a href="login.php">Ya Tienes Cuenta? Haz Click Aqui</a>
