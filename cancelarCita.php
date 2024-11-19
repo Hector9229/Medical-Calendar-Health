@@ -1,3 +1,7 @@
+<?php
+    include ('conexion.php');
+    $conn = connection();
+?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
