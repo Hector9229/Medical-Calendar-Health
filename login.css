@@ -1,0 +1,205 @@
+@import url('https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-rounded/css/uicons-regular-rounded.css');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+/*Estos dos imports se encargan de importar iconos y el tipo de letra*/
+header {                            /*Menu*/
+    position: fixed;
+    top: 0; 
+    width: 100%;
+    display: flex;
+    justify-content: space-between;   /* Divide elementos a izquierda y derecha */         
+    background-color: #000;
+    padding: 10px 0;
+    z-index: 1000;   /* Asegura que el header esté sobre otros elementos */
+}
+
+header .inicio{
+    margin-left: 10px; /* Espaciado izquierdo para el logo */
+}
+
+header .inicio button{
+    padding: 0em 0em;  /* Elimina el padding por defecto */         
+}
+                                /*Boton que retorna a home*/
+header .inicio button a{
+    font-size: 30px;  /* Tamaño del texto en el logo */
+}
+
+header img{
+    width: auto;
+    height: 55px;               /*Tamaño de la imagen en menu*/
+}
+
+header button a{
+    color: #0ebad7;    /*Botones de Login y Register*/
+    text-decoration: none;  /* Sin subrayado */     
+}
+
+header button{
+    margin-right: 15px;
+    appearance: none;  /* Remueve estilos por defecto */
+    background-color: transparent;
+    border: none;
+    border-radius: 0.9375em;
+    color: #3B3B3B;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 20px;          /*Se usa el diseño de boton aqui para no afectar a los que no estan en el menu*/
+    font-weight: 600;
+    line-height: normal;
+    outline: none;
+    padding: 0.5em 2.3em;  /* Tamaño del botón */
+    text-align: center;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);  /* Suaviza transiciones */
+    user-select: none;
+    -webkit-user-select: none;  /* Evita selección del texto */
+    touch-action: manipulation;
+}
+
+header button:hover a{
+    color: #000000;             /*Opcion que se activa al pasar el mouse sobre boton*/
+    text-decoration: none;
+}
+
+/* Estilo global para la tipografía */
+body {
+    font-family: "Open Sans", sans-serif;
+    background-color: #fafafa;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+button:hover {
+    background-color: #0eb9d7;
+    transform: translateY(-2px);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+/* Contenedor Principal */
+.contenedor-principal {
+    display: flex;
+    flex-direction: column; /* Colocar elementos verticalmente */
+    align-items: center;
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 500px;
+}
+
+/* Título */
+h1 {
+    font-size: 2rem;
+    color: black;
+    margin-bottom: 20px;
+    font-weight: bold; /* Aplica negritas */
+}
+
+/* Formulario */
+.formulario {
+    width: 100%; /* Formulario ocupa 100% del contenedor */
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 1rem;
+}
+
+/* Inputs */
+input[type="email"], 
+input[type="password"] {
+    display: block;
+    width: 100%; /* Ajuste al contenedor */
+    padding: 12px; 
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Botones */
+button.google-login,
+button.login-btn {
+    width: 100%; /* Botones al ancho del contenedor */
+    padding: 12px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button.google-login {
+    background-color: white;
+    color: black;
+}                                       /*Colores tipicos de Google*/
+
+button.google-login:hover {
+    background-color: #c33b2d;
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+}
+
+button.login-btn {
+    background-color: white;
+    color: black;
+}
+
+button.login-btn:hover {
+    background-color: #008dbb;
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+}
+
+.links {
+    display:flex;
+    justify-content: space-between;
+}
+/* Enlace de contraseña */
+a.forgot-password {
+    font-size: 0.875rem;
+    color: #007bff;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+a.forgot-password:hover {
+    text-decoration: underline;
+}
+
+/* Enlace de Registrar */
+a.register {
+    font-size: 0.875rem;
+    color: #007bff;
+    text-align: right;
+    margin-bottom: 10px;
+}
+
+a.register:hover {
+    text-decoration: underline;
+}
+
+/* Mensaje de Doctor */
+.doctor-message {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    font-size: 0.875rem;
+    color: #0ebad7;
+}
+
+.doctor-message a {
+    color: #007bff;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.doctor-message a:hover {
+    text-decoration: underline;
+}
