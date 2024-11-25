@@ -17,22 +17,19 @@ header .inicio{
 }
 
 header .inicio button{
-    padding: 0em 0em;  /* Elimina el padding por defecto */         
+    padding: 0em 0em;
+    font-size: 30px;  /* Elimina el padding por defecto */
+    color: #0ebad7;    /*Botones de Login y Register*/
+    text-decoration: none;         
 }
                                 /*Boton que retorna a home*/
-header .inicio button a{
-    font-size: 30px;  /* Tamaño del texto en el logo */
-}
+
 
 header img{
     width: auto;
     height: 55px;               /*Tamaño de la imagen en menu*/
 }
 
-header button a{
-    color: #0ebad7;    /*Botones de Login y Register*/
-    text-decoration: none;  /* Sin subrayado */     
-}
 
 header button{
     margin-right: 15px;
@@ -47,7 +44,7 @@ header button{
     font-weight: 600;
     line-height: normal;
     outline: none;
-    padding: 0.5em 2.3em;  /* Tamaño del botón */
+    padding: 0.5em 1.4em;  /* Tamaño del botón */
     text-align: center;
     transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);  /* Suaviza transiciones */
     user-select: none;
@@ -55,7 +52,7 @@ header button{
     touch-action: manipulation;
 }
 
-header button:hover a{
+header button:hover{
     color: #000000;             /*Opcion que se activa al pasar el mouse sobre boton*/
     text-decoration: none;
 }
@@ -71,20 +68,12 @@ body {
     height: 100vh;
 }
 
-button:hover {
-    background-color: #0eb9d7;
-    transform: translateY(-2px);
-}
-
-button:active {
-    transform: translateY(0);
-}
-
 /* Contenedor Principal */
 .contenedor-principal {
     display: flex;
     flex-direction: column; /* Colocar elementos verticalmente */
     align-items: center;
+    text-align: center;
     background-color: #ffffff;
     padding: 20px;
     box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
@@ -123,43 +112,50 @@ input[type="password"] {
     border-radius: 5px;
 }
 
-/* Botones */
-button.google-login,
-button.login-btn {
-    width: 100%; /* Botones al ancho del contenedor */
-    padding: 12px;
-    margin-bottom: 10px;
+button {
+    appearance: none;
+    background-color: transparent;
     border: none;
-    border-radius: 5px;
-    font-weight: bold;
+    border-radius: 0.9375em;
+    color: #3B3B3B;
     cursor: pointer;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0;
+    outline: none;
+    padding: 0.5em 6em;
+    text-align: center;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
 }
-
-button.google-login {
-    background-color: white;
-    color: black;
-}                                       /*Colores tipicos de Google*/
-
-button.google-login:hover {
-    background-color: #c33b2d;
-    color: white;
+   
+button:disabled {
+    pointer-events: none;
+}
+   
+button:hover {
+    background-color: #0eb9d7;
+    color: #ffffff;
     box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
 }
-
-button.login-btn {
-    background-color: white;
-    color: black;
-}
-
-button.login-btn:hover {
-    background-color: #008dbb;
-    color: white;
-    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+   
+button:active {
+    box-shadow: none;
+    transform: translateY(0);
 }
 
 .links {
     display:flex;
     justify-content: space-between;
+}
+.linkss {
+    display:flex;
+    justify-content: center;
 }
 /* Enlace de contraseña */
 a.forgot-password {

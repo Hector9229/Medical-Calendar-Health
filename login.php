@@ -19,10 +19,10 @@
 </head>
     <header>
         <div class="inicio">
-          <button>
-            <a href="home.html"><img src="logoR.webp" alt="logo">Medical Calendar Health</a>
+        <a href="home.php"><button>
+            <img src="logoR.webp" alt="logo">Medical Calendar Health
           </button>
-        </div>
+        </div></a>
     </header>
 <body>
     <div class="contenedor-principal">
@@ -39,7 +39,9 @@
             <a href="recovery_password.php" class="forgot-password">Olvidaste tu contraseña?</a>
             <a href="register.php" class="register">Ya tienes cuenta?</a>
         </div>
-            <input class="login-btn" type="submit" name="boton" value='Iniciar'></input>
+        <div class=linkss>
+            <button type="submit" name="boton" value='Iniciar'>Iniciar</button>
+            </div>
         </form>
     </div>
     <!-- Mensaje en la esquina inferior derecha que lleva a doctor-->

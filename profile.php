@@ -35,19 +35,19 @@ if ($query) {
 </head>
 <header>
     <div class="inicio">
-        <button>
-            <a href="home.html"><img src="logoR.webp" alt="logo">Medical Calendar Health</a>
-        </button>
+        <a href="home.php"><button>
+            <img src="logoR.webp" alt="logo">Medical Calendar Health
+        </button></a>
     </div>
 </header>
 <body>
 <div class="main-container">
     <nav class="sidebar">
         <ul>
-            <li><a href="profile.php"><i class="fi fi-rr-user"></i> Perfil</a></li>
-            <li><a href="personaldata.php"><i class="fi fi-rr-file"></i> Datos Personales</a></li>
-            <li><a href="precitas.php"><i class="fi fi-rr-calendar"></i> Citas</a></li>
-            <li><a href="logout.php"><i class="fi fi-rr-sign-out"></i> Cerrar Sesión</a></li>
+            <li><a href="profile.php"><button><i class="fi fi-rr-user"></i> Perfil</button></a></li>
+            <li><a href="personaldata.php"><button><i class="fi fi-rr-file"></i> Datos Personales</button></a></li>
+            <li><a href="precitas.php"><button><i class="fi fi-rr-calendar"></i> Citas</button></a></li>
+            <li><a href="logout.php"><button><i class="fi fi-rr-sign-out"></i> Cerrar Sesión</button></a></li>
         </ul>
     </nav>
     <section class="content">
