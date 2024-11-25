@@ -14,7 +14,7 @@
     <a href="home.php"><button><img src="logoR.webp" alt="logo">Medical Calendar Health</button></a>
     </div>
     <div class="final">
-    <a href="#"><button>Login</button></a>
+    <a href="login.php"><button>Login</button></a>
     <a href="register.php"><button>Register</button></a>
     </div>
 </header>

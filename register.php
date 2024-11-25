@@ -24,6 +24,14 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col">
+                    <div class="form-floating mt-3 mb-3">
+                        <input type="text" class="form-control" id="" placeholder="" name="email" required>
+                        <label for="email">Email</label>
+                    </div>
+                    <div class="form-floating mt-3 mb-3">
+                        <input type="password" class="form-control" id="" placeholder="" name="password" required>
+                        <label for="password">Contraseña</label>
+                    </div>
                     <div class="form-floating mb-3 mt-3">
                         <input type="text" class="form-control" id="" placeholder="" name="nombre" required>
                         <label for="nombre">Nombre(s)</label>
@@ -32,11 +40,6 @@
                         <input type="text" class="form-control" id="" placeholder="" name="apellidos" required>
                         <label for="apellidos">Apellido(s)</label>
                     </div>
-                    <div class="form-floating mt-3 mb-3">
-                        <input type="text" class="form-control" id="" placeholder="" name="email" required>
-                        <label for="email">Email</label>
-                    </div>
-                    
                     <div class="form-floating mt-3 mb-3">
                         <input type="text" class="form-control" id="" placeholder="" name="celular" required>
                         <label for="celular">Celular</label>
@@ -49,7 +52,7 @@
                 <div class="col">
                     
                     <div class="form-floating mt-3 mb-3">
-                        <input type="text" class="form-control" id="" placeholder="" name="fechaNacimiento" required>
+                        <input type="date" class="form-control" id="" placeholder="" name="fechaNacimiento" required>
                         <label for="fechaNacimiento">Fecha de nacimiento</label>
                     </div>
                     <div class="form-floating mt-3 mb-3">
@@ -82,10 +85,7 @@
                         <input type="text" class="form-control" id="" placeholder="" name="alergias">
                         <label for="alergias">Alergias</label>
                     </div>
-                    <div class="form-floating mt-3 mb-3">
-                        <input type="text" class="form-control" id="" placeholder="" name="password" required>
-                        <label for="password">Contraseña</label>
-                    </div>
+                    
                 </div>
                 <div class="col">
                     
