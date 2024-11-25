@@ -1,6 +1,9 @@
 <?php
     include ('conexion.php');
     $conn = connection();
+
+    $consultar ="SELECT Fecha FROM citas";
+    $result = mysqli_query($conn, $consultar);
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -14,24 +17,23 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <header>
-    <div class="inicio">
-      <button>
-        <a href="home.html"><img src="logoR.webp" alt="logo">Medical Calendar Health</a>
-      </button>
-    </div>
-    <div class="final">
-      <button><a href="#">Login</a></button>
-      <button><a href="register.html">Register</a></button>
+<div class="inicio">
+    <a href="home.php"><button><img src="logoR.webp" alt="logo">Medical Calendar Health</button></a>
     </div>
 </header>   
 <body>
     <h1>Cancelar cita</h1>
-    <form action="/action_page.php" class="was-validated">
+    <form action="cancelarCitas.php" class="was-validated">
         <div class="container-fluid">
             <div class="row">
                 <div class="col">
-                    <div class="form-floating mt-3 mb-3">
-                        <input type="text" class="form-control" id="email" placeholder="" name="email" required>
+                <div class="form-floating mt-3 mb-3">
+                <select name="tipoSangre" id="" class="form-control" required>
+                        <?php while($row=mysqli_fetch_array($result)):?>
+                            <option><?php echo $row['Fecha'] ?></option>
+                        
+                        <?php endwhile;?>
+                        </select>
                         <label for="email">Citas programadas</label>
                     </div>
                 </div>

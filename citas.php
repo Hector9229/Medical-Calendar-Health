@@ -1,6 +1,9 @@
 <?php
     include ('conexion.php');
     $conn = connection();
+
+
+
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -14,37 +17,46 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <header>
-    <div class="inicio">
-      <button>
-        <a href="home.html"><img src="logoR.webp" alt="logo">Medical Calendar Health</a>
-      </button>
-    </div>
-    <div class="final">
-      <button><a href="#">Login</a></button>
-      <button><a href="register.html">Register</a></button>
+<div class="inicio">
+    <a href="home.php"><button><img src="logoR.webp" alt="logo">Medical Calendar Health</button></a>
     </div>
 </header>   
 <body>
     <h1>Crear cita</h1>
-    <form action="/action_page.php" class="was-validated">
+    <form action="insertCitas.php" method="post" class="was-validated">
         <div class="container-fluid">
             <div class="row">
                 <div class="col">
                     <div class="form-floating mb-3 mt-3">
-                        <input type="text" class="form-control" id="email" placeholder="" name="email" required>
-                        <label for="email">Fecha de la cita</label>
-                    </div>
-                    <div class="form-floating mt-3 mb-3">
-                        <input type="text" class="form-control" id="email" placeholder="" name="email" required>
-                        <label for="email">Hora de la cita</label>
-                    </div>
-                    <div class="form-floating mt-3 mb-3">
-                        <input type="text" class="form-control" id="email" placeholder="" name="email" required>
+                        <input type="text" class="form-control" id="" placeholder="" name="Motivo" required>
                         <label for="email">Motivo</label>
                     </div>
                     <div class="form-floating mt-3 mb-3">
-                        <input type="text" class="form-control" id="email" placeholder="" name="email" required>
-                        <label for="email">Especialidad y doctor</label>
+                        <select name="Especialidad" id="" class="form-control" required>
+                            <option disabled selected value></option>
+                            <option value="Cardiologia">Cardiologia</option>
+                            <option value="Pediatria">Pediatria</option>
+                            <option value="Dermatologia">Cirujano</option>
+                            <option value="Ginecologia">Ginecologia</option>
+                            <option value="Neurologia">Neurologia</option>
+                            <option value="Ofmatologia">Medicina general</option>
+                            <option value="femenino">Psquiatria</option>
+                            <option value="femenino">Endocrinologia</option>
+                            
+                        </select>
+                        <label for="Especialidad">Especialidad</label>
+                    </div>
+                    <div class="form-floating mt-3 mb-3">
+                        <input type="text" class="form-control" id="" placeholder="" name="Doctor" required>
+                        <label for="email">Doctor</label>
+                    </div>
+                    <div class="form-floating mt-3 mb-3">
+                        <input type="text" class="form-control" id="" placeholder="" name="Fecha de la cita" required>
+                        <label for="email">Fecha de la cita</label>
+                    </div>
+                    <div class="form-floating mt-3 mb-3">
+                        <input type="text" class="form-control" id="" placeholder="" name="Hora de la cita" required>
+                        <label for="email">Hora de la cita</label>
                     </div>
                 </div>
                 <button type="submit">Submit</button>
